@@ -31,18 +31,18 @@ public class MainActivity extends AppCompatActivity {
             float distance = event.values[0];
 
             if (distance<pSensor.getMaximumRange()) {
-                getWindow().getDecorView().setBackgroundColor(Color.parseColor("#FF5252"));
+                getWindow().getDecorView().setBackgroundColor(Color.parseColor("#ACD1AF"));
 
                 getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
                 getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-                getWindow().setStatusBarColor(Color.parseColor("#FF5252"));
+                getWindow().setStatusBarColor(Color.parseColor("#ACD1AF"));
             }
             else {
-                getWindow().getDecorView().setBackgroundColor(Color.parseColor("#4CAF50"));
+                getWindow().getDecorView().setBackgroundColor(Color.parseColor("#F47174"));
 
                 getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
                 getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-                getWindow().setStatusBarColor(Color.parseColor("#4CAF50"));
+                getWindow().setStatusBarColor(Color.parseColor("#F47174"));
             }
         }
 
